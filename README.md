@@ -55,14 +55,17 @@ Model Evaluation
     Decision Tree Regressor: Initially trained with hyperparameter tuning. The predicted salary values were close to actual values, showing a good fit.
     Random Forest Regressor: Performed better than the Decision Tree with a higher accuracy of 94.6%.
 
-Key Evaluation Metrics:
+Key Evaluation Metrics
 
-python
+    R² Score: Measures how well the predicted values match the actual salary values. A higher R² score indicates better predictive accuracy.
 
-print("R2 Score: ", r2_score(y_test, r_pred))
-print("Mean Squared Error: ", mean_squared_error(y_test, r_pred))
-print("Mean Absolute Error: ", mean_absolute_error(y_test, r_pred))
-print('RMSE:', np.sqrt(mean_squared_error(y_test, r_pred)))
+    Mean Squared Error (MSE): Measures the average squared difference between predicted and actual values. Lower MSE indicates better model performance.
+
+    Mean Absolute Error (MAE): Represents the average of the absolute differences between predicted and actual values. It provides an intuitive measure of the model’s prediction error.
+
+    Root Mean Squared Error (RMSE): This is the square root of the MSE and gives an estimate of the error in the same units as the target variable (salary). Lower RMSE indicates better fit.
+
+
 
 Results and Conclusion
 
